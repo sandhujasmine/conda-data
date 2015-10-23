@@ -15,7 +15,6 @@ setup(
     url='',
     description='Conda data package',
     packages=find_packages(),
-    install_requires=['binstar'],
     entry_points={
           'console_scripts': [
               'conda-data = conda_data.cli:main',
