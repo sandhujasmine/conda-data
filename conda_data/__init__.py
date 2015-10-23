@@ -14,7 +14,10 @@ from conda_data.utils import semantic_version_key
 import pandas as pd
 
 
-__version__ = '0.0.0'
+# use versioneer to auto generate version number 
+from ._version import get_versions
+__version__ = get_versions()['version']
+del get_versions
 
 CHUNK_SIZE = 2 ** 14
 
